@@ -10,7 +10,7 @@ import (
 const (
 	screenWidth  = 600 // must be a square
 	screenHeight = 600
-	frameRate    = 10
+	frameRate    = 30
 )
 
 func main() {
@@ -72,8 +72,9 @@ func setup() {
 				}
 			}
 
-			sdl.Delay(1000 / frameRate)
 		}
+
+		sdl.Delay(1000 / frameRate)
 	}
 }
 
